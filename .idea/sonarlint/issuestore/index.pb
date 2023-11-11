@@ -7,3 +7,5 @@ U
 %.github/workflows/release-package.yml,2\1\21464797e2a2877b680776108d9f930290302714
 L
 src/traffic_light/version.py,b\6\b65a07893d5cd3a42e0475bae410b2ba866bfa0b
+R
+"src/traffic_light/traffic_light.py,4\d\4d83643a9d0be05e380d83ed0b3f2391c2b7ce3f
