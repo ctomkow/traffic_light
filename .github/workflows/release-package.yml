@@ -1,0 +1,22 @@
+name: Python Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build distributions
+      run: |
+        python -m build
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.PYPI_API_TOKEN }}
