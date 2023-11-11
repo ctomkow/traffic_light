@@ -9,3 +9,5 @@ L
 src/traffic_light/version.py,b\6\b65a07893d5cd3a42e0475bae410b2ba866bfa0b
 R
 "src/traffic_light/traffic_light.py,4\d\4d83643a9d0be05e380d83ed0b3f2391c2b7ce3f
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
