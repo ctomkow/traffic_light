@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Build distributions
       run: |
+        python -m pip install --upgrade pip
+        pip install build
         python -m build
 
   publish:
