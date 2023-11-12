@@ -2,13 +2,13 @@
 
 import gpiod
 from gpiod.line import Direction, Value
-from fastapi import FastAPI
+from flask import Flask
 
 LINE_RED = 9
 LINE_YLW = 10
 LINE_GRN = 11
 
-app = FastAPI()
+app = Flask(__name__)
 
 def toggle_light(line):
     with gpiod.request_lines(
@@ -26,14 +26,15 @@ def toggle_light(line):
         else:
             request.set_value(line, Value.ACTIVE)
 
-@app.put("/v1/stoplight/red")
-async def red():
+@app.route("/v1/trafficlight/red")
+def red():
     toggle_light(LINE_RED)
 
-@app.put("/v1/stoplight/yellow")
-async def yellow():
+@app.route("/v1/trafficlight/yellow")
+def yellow():
     toggle_light(LINE_YLW)
 
-@app.put("/v1/stoplight/green")
-async def green():
+
+@app.route("/v1/trafficlight/green")
+def green():
     toggle_light(LINE_GRN)

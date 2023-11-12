@@ -27,6 +27,6 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    "fastapi~=0.104.1",
+    "flask~=3.0.0",
     "gpiod~=2.1.3",
 ]
