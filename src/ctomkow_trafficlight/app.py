@@ -40,3 +40,7 @@ def yellow():
 def green():
     toggle_light(LINE_GRN)
     return Response(status=204)
+
+if __name__ == "__main__":
+    app.run()
+
