@@ -28,3 +28,5 @@ T
 $src/ctomkow_trafficlight/__init__.py,f\2\f2257104c272cc3a3f59858ab5da872c19fa188b
 Y
 )src/ctomkow_trafficlight/traffic_light.py,9\f\9f23102c8651453f8d329305af9b535120a4521b
+O
+src/ctomkow_trafficlight/app.py,0\2\0254080ad7a0d5c5cd35e0dd91680008b07c7157
