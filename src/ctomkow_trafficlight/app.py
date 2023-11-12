@@ -2,7 +2,7 @@
 
 import gpiod
 from gpiod.line import Direction, Value
-from flask import Flask
+from flask import Flask, Response
 
 LINE_RED = 9
 LINE_YLW = 10
@@ -29,11 +29,14 @@ def toggle_light(line):
 @app.route("/v1/trafficlight/red")
 def red():
     toggle_light(LINE_RED)
+    return Response(status=204)
 
 @app.route("/v1/trafficlight/yellow")
 def yellow():
     toggle_light(LINE_YLW)
+    return Response(status=204)
 
 @app.route("/v1/trafficlight/green")
 def green():
     toggle_light(LINE_GRN)
+    return Response(status=204)
