@@ -34,7 +34,6 @@ def red():
 def yellow():
     toggle_light(LINE_YLW)
 
-
 @app.route("/v1/trafficlight/green")
 def green():
     toggle_light(LINE_GRN)
